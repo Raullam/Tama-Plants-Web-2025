@@ -92911,7 +92911,7 @@ $1(a){return new A.qC(new A.a6P(),A.a([],t.cH),$.am())},
 $S:604}
 A.Qv.prototype={
 F(a){var s=null,r=A.xN(s,s,A.bc(a,!0,t.eC).b,s)
-return new A.Dd(A.b4p(),"/","flutter_loggin",r,!1,s)}}
+return new A.Dd(A.b4p(),"/","Tama Plants Beta Game",r,!1,s)}}
 A.lL.prototype={
 io(){return A.S(["_id",this.a,"idusuari",this.b,"temps",this.c],t.N,t.z)},
 gaAZ(){return this.c}}
