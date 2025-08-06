@@ -14,14 +14,14 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-    <base href="/Tama-Plants-Web-2025/" />
+    <base href="/Portfolio_Flutter_25/" />
 
     <meta charset="UTF-8" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="description" content="A new Flutter project." />
 
     <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="flutter_loggin" />
     <link rel="apple-touch-icon" href="icons/Icon-192.png" />
@@ -31,10 +31,6 @@
       name="google-signin-client_id"
       content="411406520788-a28c4f0fpc66pku8u8hmf7pdr1sk8d5o.apps.googleusercontent.com"
     />
-    
-    <!-- CORS and Security Headers for GitHub Pages -->
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="cross-origin">
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -43,9 +39,26 @@
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js'
+      import { getAuth } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js'
+
+      const firebaseConfig = {
+        apiKey: 'AIzaSyA6--Y_1lOoMEIsqZvb1D1r7eVgZ5CytPQ',
+        authDomain: 'tamaplants.firebaseapp.com',
+        projectId: 'tamaplants',
+        storageBucket: 'tamaplants.firebasestorage.app',
+        messagingSenderId: '411406520788',
+        appId: '1:411406520788:web:a72c2672f81d6d89ac4641',
+        measurementId: 'G-NDEB30NYXR',
+      }
+
+      const app = initializeApp(firebaseConfig)
+      window.firebaseApp = app
+      window.firebaseAuth = getAuth(app)
+    </script>
+
     <script src="flutter_bootstrap.js" async></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>
