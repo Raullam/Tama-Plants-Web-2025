@@ -99449,7 +99449,7 @@ m=m.d
 r=m*0.1}else{m=m.d
 if(l>=608){s=l*0.1
 r=m*0.09}else{s=l*0.02
-r=m*0.08}}m*=0.01
+r=m*0.11}}m*=0.01
 l*=0.02
 q=A.ax(B.d.aB(76.5),B.k.gm(0)>>>16&255,B.k.gm(0)>>>8&255,B.k.gm(0)&255)
 p=A.kZ(A.ax(204,B.bY.gm(0)>>>16&255,B.bY.gm(0)>>>8&255,B.bY.gm(0)&255),2)
@@ -99470,7 +99470,7 @@ A.aAu.prototype={
 $2(a,b){var s,r,q,p=this,o=null,n={},m=b.b,l=p.a.a,k=l.c
 if(k>=768)s=l.d*0.1
 else{l=l.d
-s=k>=608?l*0.09:l*0.08}n.a=null
+s=k>=608?l*0.09:l*0.11}n.a=null
 l=k>=608?n.a=B.d.dT(m*0.3,30,60):n.a=B.d.dT(m*0.4,25,50)
 r=B.d.dT(m*0.08,8,14)
 k=A.fG(o,o,B.bY,o,o,o,o,o,o,B.j,o,o,o,o,new A.cm(A.bV(10),B.w),o,o,o,o,o)
